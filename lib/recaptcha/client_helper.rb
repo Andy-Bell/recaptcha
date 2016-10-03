@@ -28,7 +28,6 @@ module Recaptcha
       end
 
       html = ""
-      html << %(<script src="#{script_url}" async defer></script>\n) if options.fetch(:script, true)
       html << %(<div class="g-recaptcha" #{tag_attributes}></div>\n)
 
       if options[:noscript] != false
